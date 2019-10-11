@@ -1,0 +1,11 @@
+use std::io;// To obtain user input and then print the result as output, we need to bring the io (input/output) library into scope. The io library comes from the standard library (which is known as std):
+fn main(){
+ println!("Please enter a number");// prints whatever is mentioned within the double quotes.
+ let mut guess=String::new(); // the let mut guess = String::new(); line has created a mutable variable that is currently bound to a new, empty instance of a String.
+ io::stdin().read_line(&mut guess)
+ .expect ("failed to read line");//  The stdin function returns an instance of std::io::Stdin, which is a type that represents a handle to the standard input for your terminal, The next part of the code, .read_line(&mut guess), calls the read_line method on the standard input handle to get input from the user. We’re also passing one argument to read_line: &mut guess.
+
+ println!("The no you guessed is {}",guess);// The value of the variable'guess' is printed inthe curly brackets.
+
+
+}
