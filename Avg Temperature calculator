@@ -1,0 +1,33 @@
+use std::io;
+fn main() {
+    let mut x:u32=31; // mutable variable
+    let mut y=8;
+    let z=2019;// immutable variable by default.
+    let a:f32=34.0;
+    let t:f32;
+    let t1=32.0; //shadowing
+    let t2=31.0; // shadowing
+    let t=t1+t2+t2;//shadowing
+    let t=t1+t2+t2/3.0; // shadowing
+    
+    let b1= true;
+    let b2= false;
+    
+    println!(" Date = {}", x); // scalar type no 1 i.e integer
+    println!(" month = {}", y);
+    println!(" year = {}", z);
+    println!(" Temperature = {} Degree centigrate",a); // scalar type no 2 i.e float
+    println!(" Average Temperature of next 3 days = {} Degree centigrate",t); // scalar type no 3 i.e mathematical operations
+    println!(" Average Temperature of next 3 days is found to be {} ",b1); // scalar type no 4 i.e boolean
+     println!(" press 'e' to end the program"); // scalar type no 5 i.e char. 
+      let mut end = String::new();
+
+
+    io::stdin().read_line(&mut end)
+        .expect("Failed to read line");
+    println!("program terminated!");
+
+
+
+
+}
