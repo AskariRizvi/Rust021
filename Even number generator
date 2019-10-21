@@ -1,0 +1,10 @@
+fn main() {
+    let mut n=0;// declaration of variable.
+ for a in 0..10 { // variable 'a' stores the loop count . The loop will run from 0 to 10 with an increment of 1.
+
+n=n+2;// add 2 to variable n.
+     println!("{}, {}",n,a);// here 'n' is the even number series while 'a' is the times the loop has run.
+ }
+
+}
+
