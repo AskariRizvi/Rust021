@@ -32,5 +32,4 @@ else if marks <=70 && marks >60{ // else if condition
       println!("Your grade is F");// prints the content of double quotes.
     }
 
-
 }
