@@ -1,0 +1,13 @@
+fn main() {
+let num=5;
+for i in (1..11){
+ let result = num*i;
+ println!("{} * {} = {}", num,i,result);
+
+
+
+}
+
+
+
+}
