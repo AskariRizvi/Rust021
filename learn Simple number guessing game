@@ -5,7 +5,7 @@ fn main(){
  io::stdin().read_line(&mut guess)
  .expect ("failed to read line");//  The stdin function returns an instance of std::io::Stdin, which is a type that represents a handle to the standard input for your terminal, The next part of the code, .read_line(&mut guess), calls the read_line method on the standard input handle to get input from the user. We’re also passing one argument to read_line: &mut guess.
 
- println!("The no you guessed is {}",guess);// The value of the variable'guess' is printed inthe curly brackets.
+ println!("The no you guessed is {}",guess);// The value of the variable'guess' is printed in the curly brackets.
 
 
 }
