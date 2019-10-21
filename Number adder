@@ -1,0 +1,17 @@
+fn main (){
+let x=5.0; // declaration of a variable
+let y=10.0; // declaration of a variable
+let z =20.0; // declaration of a variable
+let result = add(x,y,z); // The function 'add' is called in this line. A variable named 'result' will store the output that is returned by function 'add'.
+
+println!("The sum of 3 numbers is {}", result); // This line will print the contents of double quotes , replacing {} with the value of variable used after ','
+
+} // The values of all the above variables will be dropped after this point due to the rules of ownership.
+
+fn add (a:f64,b:f64,c:f64)->f64{ // This line describes what the function will actually do. In line 5 ,we are passing x ,y,z as input parameters. The value of x is stored in a new declared variable a, y in b and z in c.
+
+
+a+b+c // Note that we are not using a ; here because this line is an expression, not a statement.
+
+
+}
