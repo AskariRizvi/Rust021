@@ -7,5 +7,4 @@ fn main(){
 
  println!("The no you guessed is {}",guess);// The value of the variable'guess' is printed in the curly brackets.
 
-
 }
