@@ -1,0 +1,36 @@
+use std::io; // including the standard library
+fn main (){
+
+let marks=86; // declaration of varaible
+
+println!("Please enter your marks to find your grade"); // prints the content of double quotes.
+
+if marks>80 { // if condition
+
+println!("Your grade is A+");// prints the content of double quotes.
+
+}
+
+else if marks>70 && marks<= 80 { // else if condition
+
+    println!("Your grade is A+");// prints the content of double quotes.
+}
+
+
+else if marks <=70 && marks >60{ // else if condition
+       println!("Your grade is B");// prints the content of double quotes.
+    }
+   
+   else if marks <=60 && marks >50{ // else if condition
+       println!("Your grade is C");// prints the content of double quotes.
+    }
+    else if marks <=50 && marks>40{ // else if condition
+        println!("Your grade is D");// prints the content of double quotes.
+       
+    }
+    else{ // else if condition
+      println!("Your grade is F");// prints the content of double quotes.
+    }
+
+
+}
