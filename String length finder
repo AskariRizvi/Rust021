@@ -1,0 +1,19 @@
+use std::io;// including the standard llibrary.
+fn main() {
+
+println!("Please enter text to calculate its length."); // prints contents of double quotes.
+let mut text=String::new(); // Initializing our var which will store the string.
+io::stdin().read_line(& mut text).expect("failled to read line");// This line read whatever the user inputs. 
+
+let L=Length (& mut text); // function that takes string as an input parameter.
+println!("The length of text is {}",L);// prints contents of double quotes.
+}
+
+fn Length(l:& mut String)->usize{ // var l is reffered to the contents of var text. This function will return data that is of unknown size but will be an integer.
+
+l.trim().len()// A builtin library that calculates length of string.
+
+}
+
+
+
