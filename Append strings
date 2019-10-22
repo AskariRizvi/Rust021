@@ -1,0 +1,17 @@
+
+fn main() {
+
+let mut r =String::from("Rust will take down "); // This string syntax stores data in heap data structure, in which size of data in var r can change.
+
+Take(& mut r); // A function that takes in only the refference of var r. Thus this way our var r is the only owner and no ownership is passed further down.
+
+
+}
+
+fn Take(p:& mut String){ // The refference of var r is stored in var p as var r has gone out of scope and its value dropped.
+p.push_str("c++ in the very near future!"); // The text in double quotes is appended to the string content of var p.
+println!("{}",p);// The content of var p is printed here.
+}
+
+
+
