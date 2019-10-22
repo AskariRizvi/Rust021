@@ -1,0 +1,58 @@
+#[derive(Debug)] // Allows us to print data from struct instances.
+
+struct Employee{ // using struct
+
+EMPLOYEE_NO:u64, // field with appropiate data type.
+
+NAME: String, // field with appropiate data type.
+
+EMAIL: String,// field with appropiate data type.
+
+Gender: String,// field with appropiate data type.
+
+PHONE_NO:u64,// field with appropiate data type.
+
+active: bool,// field with appropiate data type.
+
+}
+fn main() {
+
+let Employee1=Employee{ // instance no 1 of the struct.
+
+EMPLOYEE_NO: 54, // field with appropiate data type information.
+
+NAME: String::from("John"),// field with appropiate data type information.
+
+EMAIL:String::from("John@gmail.com"),// field with appropiate data type information.
+
+Gender: String::from("Male"),// field with appropiate data type information.
+
+PHONE_NO:033475791,// field with appropiate data type information.
+
+active: true,// field with appropiate data type information.
+
+
+};// This instance is returning data, therefore a ; will be used here.
+
+let Employee2=Employee{ // instance no 2 of the struct.
+
+EMPLOYEE_NO: 54,// field with appropiate data type information.
+
+NAME: String::from("frogo"),// field with appropiate data type information.
+
+EMAIL:String::from("frogo@gmail.com"),// field with appropiate data type information.
+
+Gender:Employee1.Gender,// field with appropiate data type information.
+
+PHONE_NO:02147755391,// field with appropiate data type information.
+
+active:Employee1.active,// field with appropiate data type information.
+
+
+};
+println!("The name of employee is {} having phone no {}",Employee1.NAME,Employee1.PHONE_NO); // printing data from a specfic field of an instance.
+println!("The name of employee is {} having phone no {}",Employee2.NAME,Employee2.PHONE_NO);// printing data from a specfic field of an instance.
+}
+
+
+
