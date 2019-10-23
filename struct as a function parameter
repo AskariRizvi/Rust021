@@ -1,0 +1,33 @@
+#[derive(Debug)] // Allows us to print data from struct instances.
+
+struct Student{ // using struct
+
+Name: String , // field declaratiom
+
+Father_name: String, // field declaratiom
+
+Class:u32, // field declaratiom
+
+Grade:String, // field declaratiom
+
+}
+
+fn Add_student(Name:String,Father_name: String,Class:u32,Grade:String)->Student{ // A function that takes struct as an input parameter.
+
+ Student {
+        Name:Name, // blank field that will store data when function is called somewhere and given input.
+        Father_name:Father_name, // blank field that will store data when function is called somewhere and given input.
+        Class:Class,// blank field that will store data when function is called somewhere and given input.
+        Grade:Grade,// blank field that will store data when function is called somewhere and given input.
+    }
+
+
+}
+fn main() {
+
+let Student1=Add_student(String::from("Vladmir"),String::from("Putin"),6,String::from("A+")); // Data input for the struct function.
+
+println!("{:?}",Student1); // printing all the data content of the struct.
+
+
+}
