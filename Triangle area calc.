@@ -1,0 +1,33 @@
+#[derive(Debug)] // Allows us to print data from struct instances.
+
+struct Triangle{ // using struct
+
+Base:f32, // field declaration
+Height:f32, // field declaration
+Type: String, // field declaration
+
+
+}
+
+
+
+
+fn main() {
+
+let Tri1=Triangle{
+
+Base:10.0, // field declaratin
+Height:20.0, // field declaration
+Type: String::from("Right angle"), // field declaration
+
+};
+let area1 =area(&Tri1);// A var that will store the return value of our function.
+println!("The type of triangle and area are {} and {} respectively",Tri1.Type,area1);// prints the area of triangle along with its type.println!
+}
+
+fn area (area1:&Triangle)->f32{
+0.5 * area1.Base * area1.Height // formula of area of triangle.
+
+}
+
+
