@@ -1,0 +1,51 @@
+
+#[derive(Debug)] // Allows us to print data from struct instances.
+
+struct Marks{ // Declaration of struct.
+English:f32, // Declaration of field along with data type.
+
+Science:f32,// Declaration of field along with data type.
+
+Math:f32,// Declaration of field along with data type.
+
+Pakistan_Studies:f32,// Declaration of field along with data type.
+
+Urdu:f32,// Declaration of field along with data type.
+
+
+}
+
+impl Marks { // Declaration of implementation. They are similar to functions and used in context of structs.
+
+    fn Total_marks(&self)->f32{ // The first parameter is always self.
+self.English+self.Math+self.Pakistan_Studies+self.Science+self.Urdu // Adding all marks togeather
+
+    }
+}
+
+impl Marks{// Declaration of implementation. They are similar to functions and used in context of structs.
+
+    fn Per(&self)->f32{// The first parameter is always self.
+((self.English+self.Math+self.Pakistan_Studies+self.Science+self.Urdu)/100.0 )*100.0 //fromula> obtained marks/total marks * 100
+
+
+    }
+}
+fn main(){
+let Student_marks=Marks{ // Instance for our struct.
+
+English:10.0,
+
+Science:10.0,
+
+Math:10.0,
+
+Pakistan_Studies:10.0,
+
+Urdu:10.0,
+
+
+}; // ; is used here as our instance is returning data.
+println!("The total percantage is {} % i.e {} obtained numbers",Student_marks.Per(),Student_marks.Total_marks()); // prints the total percentage of all subjects along with total marks.
+
+}
