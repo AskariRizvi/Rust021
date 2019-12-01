@@ -1,0 +1,13 @@
+use l1::calculator::basic_func;// library name::first module name::child module name
+use l1::calculator::advanced_func;//library name::first module name::child module name
+
+fn main() {
+
+    let x=basic_func::add(3.0,2.0);// storing the return value of function'basic_func' into a var x.
+    println!("{}",x );// printing the contents of x.
+
+    let y=advanced_func::cube(5.0);// storing the return value of function'advanced_func' into a var y.
+
+    println!("{}",y );//printing the contents of y.
+    
+}

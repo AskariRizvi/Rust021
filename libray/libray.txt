@@ -1,0 +1,63 @@
+pub mod calculator {
+
+pub mod basic_func{
+
+pub fn add(x:f32,y:f32)->f32{
+
+x+y
+
+}
+
+pub fn sub(x:f32,y:f32)->f32{
+
+x-y
+
+}
+
+pub fn mult(x:f32,y:f32)->f32{
+
+x*y
+
+}
+
+pub fn div(x:f32,y:f32)->f32{
+
+x/y
+
+}
+
+
+}
+
+pub mod advanced_func {
+
+pub fn sq(x:f32,)->f32{
+
+x*x
+
+}
+
+pub fn cube(x:f32,)->f32{
+
+x*x*x
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
