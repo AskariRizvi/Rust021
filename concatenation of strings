@@ -1,0 +1,26 @@
+fn main(){
+
+let mut spanish=String::from("Hola ");// Taking input from user and storing it in a mutable var.
+spanish.push_str("from ");// pushing a new string in previous string.
+
+let english=String::from("a foreigner!");// Taking input from user and storing it in a immutable var.
+
+let spanglish=spanish+&english;// adding our 2 strings togeather and storing it in a new var.
+
+println!("{}",spanglish );// printing the contents of the var spanglish.
+
+for c in spanglish.chars(){
+
+    println!("The chars in spanglish are {}",c ); // prints all the characters of string stored in the var one by one.
+
+}
+
+for b in spanglish.bytes(){
+
+println!("The bytes taken by spanglish are {}",b);// prints all the bytes of chars storedthe var one by one.
+
+}
+
+
+
+}
