@@ -1,0 +1,98 @@
+use std::collections::HashMap;
+use std::io;
+#[derive(Debug)]
+
+struct user{
+
+    name:String,
+    no:u32,
+    item:String,
+}
+
+fn main() {
+    
+    
+println!("How many items would you like to buy?");
+        let mut x = String::new();
+
+    io::stdin().read_line(&mut x)
+        .expect("Failed to read line");
+
+        
+    let x: u32 = x.trim().parse()
+    .expect("Please type a number!");
+
+    
+    // println!("{}",y.trim());
+
+for i in 0..x{
+
+    println!("Choose between sofa,bed and table");
+        let mut y = String::new();
+
+    io::stdin().read_line(&mut y)
+        .expect("Failed to read line");
+        let y=y.trim();// removes /n
+                
+    if(y=="bed"){
+        let mut bed = HashMap::new();
+        
+        bed.insert(String::from("comp1"), 10000);
+        bed.insert(String::from("comp2"), 5000);
+        bed.insert(String::from("comp3"), 3000);
+        
+        let item = String::from("comp1");
+        let price = bed.get(&item);
+        println!("{:?}",price);
+    
+        let user1=user{
+            name:String::from("shakeel"),
+            no:033656891,
+            item:y.to_string(),
+            
+                };
+                println!("{:#?}",user1);}
+
+        else if (y=="sofa"){
+
+        let mut sofa = HashMap::new();
+        
+        sofa.insert(String::from("comp1"), 8000);
+        sofa.insert(String::from("comp2"), 7000);
+        sofa.insert(String::from("comp3"), 4000);
+        
+        let item = String::from("comp1");
+        let price = sofa.get(&item);
+        println!("{:?}",price);
+        let user1=user{
+            name:String::from("shakeel"),
+            no:033656891,
+            item:y.to_string(),
+            
+                };
+                println!("{:#?}",user1);}
+
+        else if (y=="table"){ 
+
+        let mut table = HashMap::new();
+        
+        table.insert(String::from("comp1"), 9000);
+        table.insert(String::from("comp2"), 5500);
+        table.insert(String::from("comp3"), 5900);
+        
+        let item = String::from("comp1");
+        let price = table.get(&item);
+        println!("{:?}",price);
+        let user1=user{
+            name:String::from("shakeel"),
+            no:033656891,
+            item:y.to_string(),
+            
+                };
+                println!("{:#?}",user1);}
+
+        else {}
+
+    }
+  
+}
