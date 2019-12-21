@@ -1,0 +1,16 @@
+ fn plus_one(x: Option<i32>) -> Option<i32> { // A function that takes an input of data type "option<i32>" and returns value of the same type.
+     match x { // The match function allows us to match our input to some or none and proceed with what matches.
+        None => None,
+        Some(i) => Some(i + 1),// since our input to the function is some(5),it matches with some(i) , some(i) becomes some(6) and is returned to thr var "six".
+        
+        }
+    }
+    
+
+fn main(){
+
+let five = Some(5);
+let six = plus_one(five);// passing input to the function.
+// let none = plus_one(None);
+println!("The value of plus_one is {:?}",six); // The format of printing some or none values is {:?}
+}
