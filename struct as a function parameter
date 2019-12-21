@@ -29,5 +29,4 @@ let Student1=Add_student(String::from("Vladmir"),String::from("Putin"),6,String:
 
 println!("{:?}",Student1); // printing all the data content of the struct.
 
-
 }
