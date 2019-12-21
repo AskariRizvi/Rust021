@@ -1,0 +1,33 @@
+#[derive(Debug)] // so we can inspect the state in a minute
+enum UsState {
+    Alabama,
+    Alaska,
+    
+}
+enum Coin { // Declaration of enum.
+    Penny,
+    Nickel(UsState),// linking both enums.
+    Dime,
+    Quarter,
+}
+
+
+fn value_in_cents(coin: Coin) -> u8 { // A function that returns an integer when an input matches with the content of enum.
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel(Alabama) => {
+println!("{:?}!",UsState::Alabama); // Prints the content in double quotes.5 // 5 is returned back to the function.
+       5 
+       },
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
+}
+fn main(){
+    let x = Coin::Nickel(UsState::Alabama); // Storing a content from the enum into a var x.
+    let y=value_in_cents(x);// var y stores the return value of our function when var x is given as input.
+
+
+println!("The value of Nickel is {}",y); //Prints the content in double quotes.
+
+}
